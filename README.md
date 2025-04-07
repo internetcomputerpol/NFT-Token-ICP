@@ -1,5 +1,5 @@
 
-# 🚀 Deploy ICRC-7 NFT na Lokalnej Replice ( docelowo na sieci IC ) 
+# 🚀 Deploy ICRC-7 NFT na Lokalnej Replice docelowo na sieci IC  
 
 Instrukcja krok po kroku do lokalnego uruchomienia kanistra NFT zgodnego z ICRC-7.
 

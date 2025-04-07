@@ -14,6 +14,9 @@ cd icrc_nft.mo
 ##  2. Utwórz tożsamości i przypisz je do zmiennych środowiskowych
 
 Jeżeli masz najnowszą wersję dfx to zmień wpis w sekcji dfx version w dfx.json
+
+Polecenie dfx sprawdza lokalny plik dfx więc jeżeli jest tam wpisana inna 
+wersja niż bieżąca
 To jest jedna z ostatnich linijek w pliku dfx.json:
 
 ```bash

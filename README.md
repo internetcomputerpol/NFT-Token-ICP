@@ -115,3 +115,75 @@ dfx canister call icrc7 icrc7_symbol
 ```
 dfx canister call icrc7 icrc7_name
 dfx canister call icrc7 icrc7_symbol
+
+
+
+# 🍃 Mintowanie NFT na ICP
+
+Do utworzenia tokenów NFT potrzebujemy uruchomić skrypt mintujący kanistra
+Najpierw jednak warto sprawdzić jakim principalem uruchamiamy polecenie
+
+```bash
+dfx identity whoami
+```
+jeżeli to principal, którego użyliśmy do deployowania kanistra ledgerowego dla NFT to 
+wpisujemy 
+
+```bash
+dfx identity get-principal
+```
+
+Wpisujemy to identity do poniższego skryptu ( mintowanie 2 NFT z obrazkami na Arwave ) 
+
+
+
+```bash
+dfx canister call icrc7 icrcX_mint '(
+  vec {
+    record {
+      token_id = 0;
+      owner = opt record {
+        owner = principal "itpot-bmatb-ujxhf-uzu67-cfx25-ncntc-xfkt5-fsyof-ak55b-gqpnc-nqe";
+        subaccount = null
+      };
+      metadata = variant {
+        Class = vec {
+          record {
+            name = "icrc7:metadata:uri:image";
+            value = variant {
+              Text = "https://pgtyiowtrumukealn3uruh72iox2iioblf7nbhnluqi4llxrkvbq.arweave.net/eaeEOtONGUUQC27pGh_6Q6-kIcFZftCdq6QRxa7xVUM"
+            };
+            immutable = true
+          }
+        }
+      };
+      memo = opt blob "\00\01";
+      override = true;
+      created_at_time = null
+    };
+    record {
+      token_id = 1;
+      owner = opt record {
+        owner = principal "itpot-bmatb-ujxhf-uzu67-cfx25-ncntc-xfkt5-fsyof-ak55b-gqpnc-nqe";
+        subaccount = null
+      };
+      metadata = variant {
+        Class = vec {
+          record {
+            name = "icrc7:metadata:uri:image";
+            value = variant {
+              Text = "https://2otgruq6peqdmte7fvcuyshul2zgkt74omubctzxxr2542gi2wxq.arweave.net/06Zo0h55IDZMny1FTEj0XrJlT_xzKBFPN7x13mjI1a8"
+            };
+            immutable = true
+          }
+        }
+      };
+      memo = opt blob "\00\01";
+      override = true;
+      created_at_time = null
+    }
+  }
+)'
+```
+
+

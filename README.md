@@ -13,6 +13,17 @@ cd icrc_nft.mo
 
 ##  2. Utwórz tożsamości i przypisz je do zmiennych środowiskowych
 
+Jeżeli masz najnowszą wersję dfx to zmień wpis w sekcji dfx version w dfx.json
+To jest jedna z ostatnich linijek w pliku dfx.json:
+
+```bash
+"dfx": "0.25.1"
+```
+alternatywnie możesz przeinstalować dfx do wersji 24
+
+
+
+
 ```bash
 # Tworzenie tożsamości Alice
 dfx identity new alice

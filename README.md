@@ -58,6 +58,16 @@ Zainicjalizuj mops
 ```bash
 mops init
 ```
+Zależności powinny się podłączyć i zainstalować z pliku dfx.json 
+W razie przebudowy kanistra i komunikatu 
+
+YOU WILL LOSE ALL DATA IN THE CANISTER.
+
+
+Do you want to proceed? yes/No
+
+Wpisz yes 
+! To nadpisze ustawienia kanistra 
 
 3) 
 ## 4. Wdróż kanister z argumentami przekazanymi z terminala

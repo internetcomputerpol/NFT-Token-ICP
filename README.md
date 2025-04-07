@@ -44,6 +44,22 @@ export ADMIN_PRINCIPAL=$(dfx identity get-principal)
 dfx start --clean --background
 ```
 
+MOPS ( Jeżeli nie masz skonfigurowanego Menadżera Pakietów Motoko MOPS to zrób to będą nam 
+potrzebne biblioteki do obsługi tokenów: 
+
+Zainstaluj MOPS
+```bash
+curl -fsSL cli.mops.one/install.sh | sh
+```
+```bash
+npm i -g ic-mops
+```
+Zainicjalizuj mops 
+```bash
+mops init
+```
+
+3) 
 ## 4. Wdróż kanister z argumentami przekazanymi z terminala
 
 ```bash

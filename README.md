@@ -187,3 +187,10 @@ dfx canister call icrc7 icrcX_mint '(
 ```
 
 
+## 8. Sprawdzanie Jaki Principal ma NFT i w sumie czy pod indeksami 0..5 znajdują się przypisane NFT z metadanymi 
+
+Sprawdzanie jaki Principal ma NFT 
+
+```bash
+dfx canister call icrc7 icrc7_owner_of '(vec {0;1;2;3;4})'
+```

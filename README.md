@@ -187,7 +187,7 @@ dfx canister call icrc7 icrcX_mint '(
 ```
 
 
-## 8. Sprawdzanie Jaki Principal ma NFT i w sumie czy pod indeksami 0..5 znajdują się przypisane NFT z metadanymi 
+## 8. Sprawdzanie Jaki Principal ma NFT i  czy pod indeksami 0..5 znajdują się przypisane NFT z metadanymi 
 
 Sprawdzanie jaki Principal ma NFT 
 
